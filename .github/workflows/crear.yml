@@ -37,7 +37,7 @@ jobs:
       run: docker build -t ghcr.io/jessicacunalata29/hello-jessica-js:1.0.0 .
 
     - name: Login en Github Container Registry
-      run: echo "${{ secrets.GHCR-TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+      run: echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
     - name: Publicar la imagen
       run: docker push ghcr.io/jessicacunalata29/hello-jessica-js:1.0.0
