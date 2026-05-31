@@ -24,8 +24,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Ejecutar aplicación
-      run: node app.js
+    ##- name: Ejecutar aplicación
+      ##run: node app.js
 
     - name: Ejecutar pruebas
       run: npm test
